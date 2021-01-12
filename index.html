@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秀道会館</title>
+    <meta name="description" content="秀道会館のホームページ">
+    <!-- favicon -->
+    <link rel="stylesheet" href="favicon.ico">
+    <!-- reset css -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    
+    <!-- drawer css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- wow -->
+    <script src="/js/wow.min.js"></script>
+    <link rel="stylesheet" href="/css/animate.css">
+    <!-- original -->
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<body class="drawer drawer--right">
+    <!--====================Header============================-->
+    <header id="js-header" class="header">
+        <div class="header-inner">            
+            <button type="button" class="drawer-toggle drawer-hamburger is-sp">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <nav class="drawer-nav header-nav is-pc" role="navigation">
+                <ul class="drawer-menu header-nav__list">
+                    <li class="header-nav__list-item"><a class="header-nav__list-link" href="/index.html">トップ</a></li>
+                    <li class="header-nav__list-item"><a class="header-nav__list-link" href="/about.html">秀道会館とは</a></li>
+                    <li class="header-nav__list-item"><a class="header-nav__list-link" href="#news">お知らせ</a></li>
+                    <li class="header-nav__list-item"><a class="header-nav__list-link" href="#access">アクセス</a></li>
+                    <li class="header-nav__list-item"><a class="header-nav__list-link" href="http://grappleunit.blog.fc2.com/" target="_blank">ぶらり一言</a></li>
+                    <li class="header-nav__list-item"><a class="header-nav__list-link" href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>           
+        </div>
+    </header>
+    <!-- smoothScroll -->
+    <div id="wrap" style="display: none;"></div>
+    <main>
+        <!--====================First View============================-->
+        <div class="top">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide one">
+                        <h1 class="title top__title">
+                            <span class="top__word logo">秀</span>
+                            <span class="top__word logo">道</span>
+                            <span class="top__word logo">会</span>
+                            <span class="top__word logo">館</span>
+                        </h1>                        
+                    </div>
+                    <div class="swiper-slide two">
+                        <h1 class="title top__title">
+                            <span class="top__word logo">秀</span>
+                            <span class="top__word logo">道</span>
+                            <span class="top__word logo">会</span>
+                            <span class="top__word logo">館</span>
+                        </h1>                        
+                    </div>
+                    <div class="swiper-slide three">
+                        <h1 class="title top__title">
+                            <span class="top__word logo">秀</span>
+                            <span class="top__word logo">道</span>
+                            <span class="top__word logo">会</span>
+                            <span class="top__word logo">館</span>
+                        </h1>                         
+                    </div>
+         
+                </div> 
+                
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <script type="module">
+            import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+                 /*slider */
+        
+                 var mySwiper = new Swiper('.swiper-container',{
+                  // Navigation arrows
+                  autoplay: {
+                  delay: 4000,
+                  stopOnLastSlide: false,
+                  disableOnInteraction: false,
+                  reverseDirection: false
+                  },
+                  // Optional parameters
+                  loop: true,
+                  // If we need pagination
+                  pagination:{
+                       el: '.swiper-pagination',
+                       type: 'bullets',
+                       clickable: true,
+                  }
+             });
+        </script>
+        <!--====================Schedule============================-->
+        <section class="news" id="news">
+            <h2 class="section-title title wow fadeInUp">お知らせ</h2>
+            <div class="info  wow fadeInUp">
+                <p>コロナの影響のため練習は月に一度、<br class="is-sp">第一金曜日に実施させていただきます。<br>
+                ご了承の程何卒よろしくお願い申し上げます。</p>
+            </div>
+            <div class="news-block  wow fadeInUp">
+                <dl class="news__block-info">
+                    <dt class="news__block-tag">次回練習日</dt>
+                    <dd class="news__block-content">
+                        <div class="time">2020.12.04</div><div class="content">安浦まちづくりセンターにて実施いたします。</div>
+                    </dd>
+                </dl>
+                <dl class="news__block-info">
+                    <dt class="news__block-tag">更新</dt>
+                    <dd class="news__block-content">
+                        <div class="time">2020.07.03</div><div class="content">来週から練習を再開させていただきます。</div>
+                    </dd>
+                </dl>
+                <dl class="news__block-info">
+                    <dt class="news__block-tag">緊急連絡</dt>
+                    <dd class="news__block-content">
+                        <div class="time">2020.04.03</div><div class="content">コロナの影響のため暫く練習を中止いたします。</div>
+                    </dd>
+                </dl>
+                <dl class="news__block-info">
+                    <dt class="news__block-tag">連絡</dt>
+                    <dd class="news__block-content">
+                        <div class="time">2019.09.21</div><div class="content">練習場所が安浦まちづくりセンターに変更になりました。</div>
+                    </dd>
+                </dl>
+            </div>
+        
+        </section>
+        <!--====================Access============================-->
+        <section class="access" id="access">
+            <h2 class="section-title title  wow fadeInUp">アクセス</h2>
+            <div class="second-inner">
+                <div class="access__info  wow fadeInUp">
+                    <p><span style="text-decoration: underline;">場所：安浦まちづくりセンター</span><br>
+                        
+                        安浦駅出口から直進して100m位行くと，<br class="is-sp">安浦町づくりセンターがあります。<br> その中の４F軽運動室が練習場です。<br>
+                    </p>
+                </div>
+                <div class="access__item wow fadeInUp">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.692454658743!2d132.74210481496962!3d34.28189388054402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35506db2c0cbed7b%3A0xaf2cd2d2e8a1c93c!2z5a6J5rWm44G-44Gh44Gl44GP44KK44K744Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1603164230854!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+              
+
+                <div class="link-button wow fadeInUp"><a class="map-link button" href="https://goo.gl/maps/U9yXfkaHh9iNTavL7" target="_blank">Googleマップで見る</a></div><!-- /.map__link -->
+            </div><!-- /.map__inner -->
+        </section>
+        <!--====================Contact============================-->
+       <section class="contact" id="contact"> 
+            <h2 class="section-title title  wow fadeInUp">お問い合わせ</h2>
+            <div class="inner">
+                <!-- <div class="contact__block wow fadeInUp">
+                    <form id="js-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdsWp-w0TxPaO-HHOHLoYCAbl2-vR54v1oSikcC_WhJeyUtKw/formResponse" method="post" class="contact__form" target="hidden_iframe">
+
+                        <p class="contact__text">入門に関するお問い合わせや体験のご依頼は<br class="is-sp">下記フォームより承っております。<br />
+                        個人情報保護方針にご同意の上<br class="is-sp">送信してください。<br />
+                        お送り頂きますお問い合わせ内容を確認次第、<br class="is-sp">折り返しご連絡させて頂きます。<br />
+                        <span class="important">※は必須項目です。</span>
+                        </p>
+                        <dl class="contact__info">
+                            <dt class="contact__required">お名前<span class="important">※</span></dt>
+                            <dd class="contact__answer"><span class="contact__answer-form your-name"><input class="contact__input" type="text" name="entry.1056438424" value="" size="40" required></span> </dd>
+                        </dl>
+                        <dl class="contact__info">
+                            <dt class="contact__required">メールアドレス<span class="important">※</span></dt>
+                            <dd class="contact__answer"><span class="contact__answer-form your-email"><input class="contact__input" type="email" name="entry.400578076" value="" size="40" required></span></dd>
+                        </dl>
+                        <dl class="contact__info">
+                            <dt class="contact__required">TEL<span class="important">※</span></dt>
+                            <dd class="contact__answer"><span class="contact__answer-form your-tel"><input class="contact__input" type="tel" name="entry.455515474" value="" size="40" required></span></dd>
+                        </dl>
+                        <dl class="contact__info">
+                            <dt class="contact__required">お問合せ内容<span class="important">※</span></dt>
+                            <dd class="contact__answer"><span class="contact__answer-form your-message"><textarea class="contact__input" name="entry.15780064" cols="40" rows="10" required></textarea></span> </dd>
+                        </dl>
+                    
+                     </div>
+                    <div class="contact__button">
+                        <button id="js-submit" class="contact__submit button"  value="送信">送信</button>
+                    </div>
+                    </form>
+
+                </div> -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzDmNYzlslDHacRJTt7odBXmGXSGqn9_4Vl4DPwO5BOYOtCQ/viewform?embedded=true" width="100%" height="950px" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+            </div>
+
+        </section> 
+    </main>
+    <!--====================Footer============================-->
+    <footer class="footer">
+        <div class="footer__inner inner">
+            <div class="footer__logo">
+                <a href="#" style="color: #fff;"><h1 class="logo-word title">秀道会館</h1></a>
+            </div>
+            <div class="footer__sns">
+                <ul class="footer__sns-icons">
+                    <li class="footer__sns-icon"><a><i class="fab fa-twitter"></i></a></li>
+                    <li class="footer__sns-icon"><a><i class="fab fa-instagram"></i></a></li>
+                    <li class="footer__sns-icon"><a><i class="fab fa-line"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__copyright"><small lang="en">© 2020 秀道会館 All rights reserved</small></p>
+    </footer>
+
+    <p class="page-top"><a href="#wrap"><i class="fas fa-chevron-up"></i></a></p>
+    <script>
+        //drawer
+       $(".drawer-hamburger").on("click", function(e) {
+        e.preventDefault();
+        //ここにドロワーの記述
+        $(document).ready(function() {
+             $('.drawer').drawer();
+             });    
+        return false;
+        });  
+    </script>
+</body>
+</html>
+
